@@ -6,11 +6,11 @@ int main()
 	sf::RenderWindow wind(sf::VideoMode(500, 500), "window");
 
 	sf::Event event;
-	while (wind.isOpen)
+	while (wind.isOpen())
 	{
 		while (wind.pollEvent(event))
 		{
-			if (event.type==)
+			if (event.type== sf::Event::Closed)
 				wind.close();
 			if (event.key.code == sf::Keyboard::Escape)
 			{
